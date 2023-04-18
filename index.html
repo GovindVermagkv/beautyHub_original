@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautyHub | Home</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?69858';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#4dc247",
+        "ctaText":"Contact Us",
+        "borderRadius":"25",
+        "marginLeft":"0",
+        "marginBottom":"50",
+        "marginRight":"50",
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"BeautyHub",
+        "brandSubTitle":"The Best Yet To come",
+        "brandImg":"https://toppng.com/uploads/preview/blushers-delight-ladies-beauty-parlour-logo-11562891726v9xmtk7cjh.png",
+        "welcomeText":"Hello dude☻!\nHow can I help you?",
+        "messageText":"Hello, I have a question about The BeautyHub.",
+        "backgroundColor":"#d73c8f",
+        "ctaText":"Start Chat",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"7307220229"
+    }
+  };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+  </script>
+
+  </body>
+</html>

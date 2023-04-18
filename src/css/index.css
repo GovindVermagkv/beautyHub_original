@@ -1,0 +1,108 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@500;700&family=Satisfy&display=swap"); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsMed;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: PoppinsSB;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: PoppinsB;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: CursiveText;
+  src: url(../fonts/Satisfy/Satisfy-Regular.ttf);
+}
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Satisfy', cursive; */
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #252525;
+}
+.hed {
+  position: relative;
+  padding: 0 5px;
+}
+.hed::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 5px;
+  width: 80%;
+  left: 0;
+  bottom: -5px;
+  background: #d87093;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+}
+.font-med{
+  font-family: PoppinsMed;
+}
+.font-sb{
+  font-family: PoppinsSB;
+}
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(135deg, #252525c7 12%, #d8709334 90%),
+    url(../assets/banner.jpeg);
+  background-size: cover;
+  background-position: top center;
+  z-index: -1;
+}
+
+.hero h1,
+.hero h1 span,
+.comp .page,
+.comp .page span {
+  font-family: CursiveText;
+}
+
+.test-card.is-selected {
+  box-shadow: 0 0 15px #2525252c;
+}
+.testimonial {
+  background: linear-gradient(#fffffff2, #fffffff2),
+    url(../assets/testimonial.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.team-card .inner-tcard {
+  filter: drop-shadow(0 0 4px #2525252c);
+  transition: 0.15s ease-in-out all;
+}
+.team-card .inner-tcard:hover {
+  filter: drop-shadow(0 0 5px #2525252c);
+}

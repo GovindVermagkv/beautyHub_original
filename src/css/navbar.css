@@ -1,0 +1,44 @@
+.header{
+  z-index: 10000;
+}
+.logo .page,
+.logo .page span {
+  font-family: CursiveText;
+}
+
+.logo .img {
+  filter: invert(100%);
+}
+.link li {
+  position: relative;
+}
+.link li::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  height: 2px;
+  left: 0%;
+  background: #d87093;
+  width: 0%;
+  transition: 0.3s ease-in-out all;
+}
+
+.link li:hover::after {
+  width: 100%;
+}
+
+.toggle .open,
+.toggle.active .close {
+  display: block;
+}
+
+.toggle .close,
+.toggle.active .open {
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+    .link li:hover::after {
+        width: 0;
+      }   
+}
