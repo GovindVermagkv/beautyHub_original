@@ -26,7 +26,7 @@ const Footer = () => {
       <div style={{ marginTop: '20px' }}>
         <p>Email: info@beautyhub.com</p>
         <p>Phone: (123) 456-7890</p>
-        <p>Address: 123 Beauty St, Suite 456, City, State Zip</p>
+        <p>Address: 123 Beauty St, Suite 456, City, State Zip.</p>
       </div>
     </div>
     </>
