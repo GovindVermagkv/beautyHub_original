@@ -1,5 +1,10 @@
-.header{
-  z-index: 10000;
+* {
+  font-family: Ubuntu;
+}
+
+.header {
+  z-index: 100;
+  position: relative;
 }
 .logo .page,
 .logo .page span {
@@ -9,6 +14,46 @@
 .logo .img {
   filter: invert(100%);
 }
+
+/* Search_Area */
+.Head_Input_Area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.News-input {
+  border-radius: 10px;
+  width: 60%;
+  height: 30px;
+  text-align: center;
+  color: black;
+  font-family: Ubuntu;
+}
+.Search_Btn {
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  width: 80px;
+  height: 30px;
+  font-weight: bold;
+}
+.Search_Btn:hover {
+  background-color: #d87093;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .News-input {
+    width: 40%;
+    height: 30px;
+
+  }
+.Search_Btn{
+}
+
+}
+
+
 .link li {
   position: relative;
 }
@@ -37,8 +82,8 @@
   display: none;
 }
 
-@media screen and (max-width:767px) {
-    .link li:hover::after {
-        width: 0;
-      }   
+@media screen and (max-width: 767px) {
+  .link li:hover::after {
+    width: 0;
+  }
 }

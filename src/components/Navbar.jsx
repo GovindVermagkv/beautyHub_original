@@ -4,7 +4,10 @@ import logo from "../assets/logo.png";
 import { HiMenu } from "react-icons/hi";
 import { RiCloseFill } from "react-icons/ri";
 import "../css/navbar.css";
-const Navbar = () => {
+import "../css/Logo.css";
+import { Search } from "./Search";
+import { Location } from "./Location";
+ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [navLink, setnavLink] = useState(false);
   const toggleMenu = () => {
@@ -19,16 +22,24 @@ const Navbar = () => {
       }, 500);
     }
   };
+
   return (
     <>
-      {/* mb-[90px] */}
-      <header className="header bg-[#252525] text-white fixed w-full">
+      <div id="logo" className="animate_animated animate_fadeInDown">
+        <img
+          src="https://i.pinimg.com/originals/c6/5e/64/c65e6462967bbeba86a6ed9d59554310.png"
+          alt=" "
+        />
+        <h1>
+          Beauty<span>Hub</span>
+        </h1>
+        <b>.Com</b>
+      </div>
+      <header className="header bg-[#252525] text-white w-full">
         <nav className="nav max-w-[1536px] bg-[#252525] 2xl:mx-auto relative top-0 md:py-5 md:px-10 py-4 sm:px-8 pl-4 pr-7 flex justify-between items-center w-full">
-          <div className="logo">
-            <Link to="/" className="page text-2xl flex items-center">
-              <img src={logo} alt="logo" className="sm:w-12 w-10 img" />
-              <span className="text-[#d87093]">Beauty</span>Hub
-            </Link>
+          <div className="search-location d-flex">
+            <Location />
+            <Search />
           </div>
           <ul
             className={`${
@@ -44,15 +55,6 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            {/* <li className="md:ml-4 md:py-0 py-1.5 md:my-0 my-2 md:w-auto w-full md:text-sm text-lg text-center">
-              <Link
-                className="md:px-2 md:py-1.5 block"
-                to="/"
-                onClick={toggleMenu}
-              >
-                About
-              </Link>
-            </li> */}
             <li className="md:ml-4 md:py-0 py-1.5 md:my-0 my-2 md:w-auto w-full md:text-sm text-lg text-center">
               <Link
                 className="md:px-2 md:py-1.5 block"

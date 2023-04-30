@@ -29,8 +29,11 @@ const Footer = () => {
         <p>Address: 123 Beauty St, Suite 456, City, State Zip.</p>
       </div>
     </div>
+
     </>
   );
 };
 
 export default Footer;
+
+
